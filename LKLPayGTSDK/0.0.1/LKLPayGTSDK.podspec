@@ -93,8 +93,8 @@ Pod::Spec.new do |s|
 
   s.vendored_libraries = 'PaymaxSDK/libPaymaxSDK.a', 'PaymaxSDK/Paymax_lkl/libPaymaxLkl.a', 'PaymaxSDK/Paymax_lkl/lkl/libLKLPaySDK.a'
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "PaymaxSDK/**/*.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
   s.public_header_files = "PaymaxSDK/**/*.h"
