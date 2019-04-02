@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint GTFoundation.podspec' to ensure this is a
+#  Be sure to run `pod spec lint thirdlibadapter.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "yyspod"
-  s.version      = "1.4.1"
-  s.summary      = "GTFoundation is the base of iOS develop with GT."
+  s.name         = "ThirdLibAdapter"
+  s.version      = "0.0.6"
+  s.summary      = "Support Swift 4 and support third lib hot insert ...."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,12 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                        Support Swift 4
-                        GT iOS Develop ..., Fix: Page List adjust code open and crash.  Validator : Add verify rule ...
-                        1.1.0 --- Add BarCodes and WindowManager FrameWork.
+  					Support Swift 4 and support third lib hot insert ... and is ok
                    DESC
 
-  s.homepage     = "http://EXAMPLE/GTFoundation"
+  s.homepage     = "http://gt.gitlab.com/thirdlibadapter"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -56,9 +54,9 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "tiangui" => "xielibin_bin@163.com" }
-  # Or just: s.author    = "tiangui"
-  # s.authors            = { "tiangui" => "xielibin_bin@163.com" }
-  # s.social_media_url   = "http://twitter.com/tiangui"
+  # Or just: s.author    = ""
+  # s.authors            = { "" => "" }
+  # s.social_media_url   = "http://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -67,10 +65,10 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -82,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://gt.gitlab.com/ios/basic.git", :tag => "#{s.version}" }
+  s.source       = { :git => "http://gt.gitlab.com/ios/thirdlibadapter.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,51 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "GTFoundation/*.{h,m,swift}"
-  # s.source_files  = "GTFoundation", "GTFoundation/**/*.{h,m,swift}"
+  s.source_files  = "Sources/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.subspec 'Net' do |sb|
-  	sb.source_files = "GTFoundation/Net/*.{h,m,swift}"
-  end
-  
-  s.subspec 'Color' do |sb|
-	sb.source_files = "GTFoundation/Color/*.{h,m,swift}"
-  end
-  
-  s.subspec 'Extension' do |sb|
-	sb.source_files = "GTFoundation/Extension/*.{h,m,swift}"
-  end
-  
-  s.subspec 'AlertControl' do |sb|
-	sb.source_files = "GTFoundation/AlertControl/*.{h,m,swift}"
-  end
-  
-  s.subspec 'TimeCenter' do |sb|
-	sb.source_files = "GTFoundation/TimeCenter/*.{h,m,swift}"
-  end
-
-  s.subspec 'View' do |sb|
-    sb.source_files = "GTFoundation/View/*.{h,m,swift}"
-  end
-
-  s.subspec 'PageList' do |sb|
-    sb.source_files = "GTFoundation/PageList/*.{h,m,swift}"
-  end
-
-  s.subspec 'WorkFlow' do |sb|
-    sb.source_files = "GTFoundation/WorkFlow/*.{h,m,swift}"
-  end
-
-  s.subspec 'WindowManager' do |sb|
-    sb.source_files = "GTFoundation/WindowManager/*.{h,m,swift}"
-  end
-
-  s.subspec 'BarCodes' do |sb|
-    sb.source_files = "GTFoundation/BarCodes/*.{h,m,swift}"
-  end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -147,7 +105,6 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource = "GTFoundation/**/*.xcassets", "GTFoundation/**/*.bundle"
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
@@ -160,6 +117,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
+  # s.static_framework = true
+  
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
@@ -177,11 +136,9 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency 'Alamofire', '~> 4.7.0'
-  s.dependency 'SwiftyRSAGT', '~> 1.2.0'
-  s.dependency 'SnapKit', '~> 4.2.0'
-  s.dependency 'EFQRCode', '~> 4.1.0'
-
+  # s.dependency "WechatOpenSDK", '~> 1.8.0'
+  
+  s.swift_version = "4.2"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
 end
