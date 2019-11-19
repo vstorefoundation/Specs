@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBQQAdp'
-  s.version          = '5.0.2'
+  s.version          = '5.0.3'
   s.summary          = 'LBQQAdp for qqsdk adapter.'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'TLAdapter', '~> 5.0.2'
+  s.dependency 'TLAdapter', '~> 5.0.3'
   s.dependency 'GTQQSDK', '0.1.0'
   
   s.swift_version = "5.0"
