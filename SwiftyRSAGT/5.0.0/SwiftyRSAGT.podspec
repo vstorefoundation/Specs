@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Scoop" => "ops@takescoop.com" }
 
-  s.source       = { :git => "http://gt.gitlab.com/xielb/SwiftyRSAGT.git", :tag => s.version }
+  s.source       = { :git => "http://gitlab.pgt/ios/swiftyrsagt.git", :tag => s.version }
   s.source_files = "SwiftyRSA/*.{swift,m,h}"
   s.framework    = "Security"
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.2'
   s.watchos.deployment_target = '2.2'
 
-  s.dependency 'CryptoSwift', '~> 1.0.0'
+  s.dependency 'CryptoSwift', '1.0.0'
   
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 end
