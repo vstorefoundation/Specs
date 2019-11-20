@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '2.3'
-  s.dependency 'TLAdapter', '5.0.0'
+  s.dependency 'TLAdapter', '5.0.1'
   s.dependency 'GTQQSDK', '0.1.0'
   
   s.swift_version = "5.0"
