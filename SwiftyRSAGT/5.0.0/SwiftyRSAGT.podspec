@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Scoop" => "ops@takescoop.com" }
 
-  s.source       = { :git => "http://gitlab.pgt/ios/swiftyrsagt.git", :tag => s.version }
+  s.source       = { :git => "https://git.petroun.com:20443/ios/swiftyrsagt.git", :tag => s.version }
   s.source_files = "SwiftyRSA/*.{swift,m,h}"
   s.framework    = "Security"
 
