@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GTQQSDK"
-  s.version      = "0.1.0"
+  s.version      = "master"
   s.summary      = "A short description of GTQQSDK."
 
   # This description is used to generate tags and improve search results.
