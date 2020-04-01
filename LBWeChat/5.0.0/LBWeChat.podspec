@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xielibin1@163.com' => 'xielibin_bin@163.com' }
-  s.source           = { :git => 'http://gitlab.pgt/ios/lbwechat.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://git.petroun.com:20443/ios/lbwechat.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
