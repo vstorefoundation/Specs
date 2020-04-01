@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBWeChat'
-  s.version          = 'master'
+  s.version          = '5.0.0'
   s.summary          = 'wechat function'
 
 # This description is used to generate tags and improve search results.
