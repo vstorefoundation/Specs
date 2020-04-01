@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SQLiteGTDB"
-  s.version      = "master"
+  s.version      = "5.0.0"
   s.summary      = "SQLiteGTDB: wrapper SQLite.swift for sqlite db."
 
   # This description is used to generate tags and improve search results.
