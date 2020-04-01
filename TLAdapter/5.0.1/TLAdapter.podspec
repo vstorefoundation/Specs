@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TLAdapter'
-  s.version          = 'master'
+  s.version          = '5.0.1'
   s.summary          = 'TLAdapter for adapter third lib share and pay.'
 
 # This description is used to generate tags and improve search results.
