@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GTFoundation"
-  s.version      = "5.0.1"
+  s.version      = "master"
   s.summary      = "GTFoundation is the base of iOS develop with GT."
 
   # This description is used to generate tags and improve search results.
