@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '2.3'
   s.dependency 'TLAdapter', '5.0.1'
-  s.dependency 'WechatOpenSDK', '1.8.0'
+  s.dependency 'WechatOpenSDK'
   
   s.swift_version = "5.0"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
