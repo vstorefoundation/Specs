@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   
   # s.dependency 'AFNetworking', '2.3'
   s.dependency 'TLAdapter', '5.0.1'
-  s.dependency 'AlipaySDK'
+  s.dependency 'AlipaySDK', '>= 0'
   #s.dependency 'AlipaySDK-iOS', '15.5.9'
   
   s.requires_arc = true
