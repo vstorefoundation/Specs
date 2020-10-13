@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://gitlab.pgt/ios/gtjdpaysdk.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://git.petroun.com:20443/ios/gtjdpaysdk.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
