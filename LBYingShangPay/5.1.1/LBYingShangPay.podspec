@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.libraries = 'c++', 'z', 'sqlite3.0'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'UPPaySDKGS', '0.0.8'
-  s.dependency 'WechatOpenSDK', '1.8.0'
+  s.dependency 'WechatOpenSDK'
   s.dependency 'TLAdapter', '~> 5.0.0'
   s.dependency 'YSPay', '0.0.2'
   
