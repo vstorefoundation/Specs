@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBAliPay'
-  s.version          = '5.1.3'
+  s.version          = '5.1.4'
   s.summary          = 'LBAliPay for alipay sdk.'
 
 # This description is used to generate tags and improve search results.
