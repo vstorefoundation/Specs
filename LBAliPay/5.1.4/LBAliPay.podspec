@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LBAliPay/Classes/*/*'
+  s.source_files = "LBAliPay/Classes", "LBAliPay/Classes/**/*.{h,m}" 
   s.resource_bundles = {'Resources' => 'LBAliPay/Classes/*/*.bundle'}
   # s.resource_bundles = {
   #   'LBAliPay' => ['LBAliPay/Assets/*.png']
