@@ -8,8 +8,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'LBAliPay'
-  s.version          = '5.1.4'
+  s.name             = 'AliPay'
+  s.version          = '1.0.0'
   s.summary          = 'LBAliPay for alipay sdk.'
 
 # This description is used to generate tags and improve search results.
@@ -22,10 +22,10 @@ Pod::Spec.new do |s|
                         LBAliPay for alipay sdk and my inssss
                        DESC
 
-  s.homepage         = 'https://github.com/xielibin1@163.com/LBAliPay'
+  s.homepage         = 'http://gitlab.alibaba-inc.com/baichuan_ios/AlipaySDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xielibin1@163.com' => 'xielibin_bin@163.com' }
+  s.license          = { :type => 'Copyright', :file => 'LICENSE' }
+  s.author           = { '御道' => 'madding.lip@alibaba-inc.com' }
   s.source           = { :git => 'http://baichuan-sdk-repository.cn-hangzhou.oss-pub.aliyun-inc.com/baichuanRepo/ios/AlipaySDK/2.0.0-bc/alipay.zip'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
