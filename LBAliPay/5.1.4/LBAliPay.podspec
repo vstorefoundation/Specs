@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "LBAliPay/Classes", "LBAliPay/Classes/**/*.{h,m}" 
   s.resource_bundles = {'Resources' => 'LBAliPay/Classes/*/*.bundle'}
+  s.frameworks = "AlipaySDK"
   # s.resource_bundles = {
   #   'LBAliPay' => ['LBAliPay/Assets/*.png']
   # }
