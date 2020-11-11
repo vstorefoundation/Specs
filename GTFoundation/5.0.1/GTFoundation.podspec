@@ -180,7 +180,7 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '5.0.0-beta.5'
   s.dependency 'SwiftyRSAGT', '5.0.0'
   s.dependency 'SnapKit', '5.0.0'
-  s.dependency 'EFQRCode', '5.0.0'
+  s.dependency 'EFQRCode', '6.0.0'
   s.dependency 'SQLiteGTDB', '5.0.0'
   s.swift_version = "5.0"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
