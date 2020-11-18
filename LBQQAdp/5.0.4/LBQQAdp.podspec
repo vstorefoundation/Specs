@@ -10,7 +10,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBQQAdp'
-  s.version          = '1.0.2.1'
+  s.version          = '1.0.2.2'
   s.summary          = 'LBQQAdp for qqsdk adapter.'
 
 # This description is used to generate tags and improve search results.
