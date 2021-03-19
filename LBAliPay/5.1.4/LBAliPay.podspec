@@ -32,8 +32,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = "LBAliPay/Classes/*" ,"LBAliPay/Classes/**/*.h" 
-  s.resource_bundles = {'Resources' => 'LBAliPay/Classes/*/*'}
-  s.frameworks = "AlipaySDK"
+  s.resource_bundles = {'Resources' => 'LBAliPay/Classes/*/*.bundle' }
+  s.vendored_frameworks = 'LBAliPay/Classes/*/*framework'
+  #s.frameworks = "AlipaySDK"
   # s.resource_bundles = {
   #   'LBAliPay' => ['LBAliPay/Assets/*.png']
   # }
@@ -41,7 +42,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.frameworks = 'UIKit', 'Foundation', 'CFNetwork', 'CoreMotion', 'CoreGraphics', 'CoreText', 'QuartzCore', 'CoreTelephony', 'SystemConfiguration'
+  s.frameworks = 'UIKit', 'Foundation', 'CFNetwork', 'CoreMotion', 'CoreGraphics', 'CoreText', 'QuartzCore', 'CoreTelephony', 'SystemConfiguration', 'AlipaySDK'
   
   s.libraries = "c++", "z"
   
