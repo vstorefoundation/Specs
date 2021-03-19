@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBAliPay'
-  s.version          = '5.1.8'
+  s.version          = '5.1.9'
   s.summary          = 'LBAliPay for alipay sdk.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "LBAliPay/Classes/*" ,"LBAliPay/Classes/**/*.h" 
   s.resource_bundles = {'Resources' => 'LBAliPay/Classes/*/*'}
-  #s.frameworks = "AlipaySDK"
+  s.frameworks = "AlipaySDK"
   # s.resource_bundles = {
   #   'LBAliPay' => ['LBAliPay/Assets/*.png']
   # }
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
   # s.dependency 'AFNetworking', '2.3'
   s.dependency 'TLAdapter', '5.0.1'
   #s.dependency 'AliPaySDK', '2.0.0-bc'
-  s.dependency 'AlipaySDK-2.0'
+  #s.dependency 'AlipaySDK-2.0'
   #s.dependency 'AlipaySDK-iOS', '~> 15.7.9'
   
   s.requires_arc = true
